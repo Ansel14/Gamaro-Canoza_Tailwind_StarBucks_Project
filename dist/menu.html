@@ -12,6 +12,39 @@
     />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <img src="../IMG/Rewards__IMG/Logo.svg" alt="" />
+          <div class="header__navigation">
+            <nav class="flex flex-col gap-5">
+              <ul class="header__nav">
+                <li><a href="">Menu</a></li>
+                <li><a href="./rewards.html">Rewards</a></li>
+                <li><a href="./menu.html">Gift Cards</a></li>
+              </ul>
+              <span class="w-[20rem] h-[1.5px] bg-black/10"></span>
+              <div class="header__login pt-3">
+                <div class="header__btn flex flex-row items-center gap-5">
+                  <a class="btn bg--transparent">Sign in</a>
+                  <a class="btn bg--black">Join now</a>
+                </div>
+              </div>
+              <a
+                ><i class="fa-solid fa-location-dot"></i> &nbsp; Find a store</a
+              >
+            </nav>
+          </div>
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="back__drop"></div>
+        </div>
+      </div>
+    </header>
+
     <!-- menu navbar -->
     <section class="menuNav bg-offWhite">
       <div class="container">
@@ -35,67 +68,67 @@
       <div class="container">
         <div class="menu__wrapper">
           <h2>Menu</h2>
-          <div class="menu__tab">
+          <div class="menu__tab" id="menu__all">
             <h3>Drinks</h3>
             <span class="divider"></span>
             <div class="menu__drinks flex flex-col gap-4">
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-1">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/Iced_Energy/TropicalCitrusEnergyDrink.jpg"
                   alt=""
                 />
                 <h4>Iced Energy</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-2">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
                   alt=""
                 />
                 <h4>Hot Coffees</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-3">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/Cold_Coffee/SBX20221130_WhiteChocolateMacadamiaColdBrew.jpg"
                   alt=""
                 />
                 <h4>Cold Coffees</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-4">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/SB_refreshers/SummerBerryRefreshersLemonade.jpg"
                   alt=""
                 />
                 <h4>Starbucks Refreshers Beverages</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-5">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/Frappuccino/SBX20211210_MochaCookieCrumbleFrapp.jpg"
                   alt=""
                 />
-                <h4>Frappuccino Blended Beverages</h4>
+                <h4>Frappuccino® Blended Beverages</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-6">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/Iced_tea_and_lemonade/SBX20190531_IcedBlackTea.jpg"
                   alt=""
                 />
                 <h4>Iced Tea and Lemonade</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-7">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/Hot_Teas/SBX20220411_ChaiLatte.jpg"
                   alt=""
                 />
                 <h4>Hot Teas</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-8">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/Milk_Juice/SBX20190617_SignatureHotChocolate.jpg"
                   alt=""
                 />
                 <h4>Milk,Juice & More</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-9">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/Bottled_Beverage/SpindriftLemon.jpg"
                   alt=""
@@ -103,38 +136,38 @@
                 <h4>Bottled Beverages</h4>
               </div>
             </div>
-            <h3>Drinks</h3>
+            <h3>Food</h3>
             <span class="divider"></span>
             <div class="menu__food flex flex-col gap-4">
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-10">
                 <img
                   src="../IMG/Menu_ IMG/FOOD/Hot_Breakfast/EggPestoMozzarellaSandwich.jpg"
                   alt=""
                 />
                 <h4>Hot Breakfast</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-11">
                 <img
                   src="../IMG/Menu_ IMG/FOOD/Oatmeal_Yogurt/SBX20230321_Oatmeal_onGreen.jpg"
                   alt=""
                 />
                 <h4>Oatmeal & Yogurt</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-12">
                 <img
                   src="../IMG/Menu_ IMG/FOOD/Bakery/SBX20190715_PlainBagel.jpg"
                   alt=""
                 />
                 <h4>Bakery</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-13">
                 <img
                   src="../IMG/Menu_ IMG/FOOD/Lunch/SBX20220207_GrilledCheeseOnSourdough_US.jpg"
                   alt=""
                 />
                 <h4>Lunch</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-14">
                 <img
                   src="../IMG/Menu_ IMG/FOOD/Snacks/SBX20210825_MadeleineCakes.jpg"
                   alt=""
@@ -145,46 +178,46 @@
             <h3>At Home Coffee</h3>
             <span class="divider"></span>
             <div class="menu__atHome flex flex-col gap-4">
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-15">
                 <img
                   src="../IMG/Menu_ IMG/AT_HOME_COFFEE/Whole_Bean/ReserveColombiaNarinoGranosDeEsperanzaUSWBReserve.jpg"
                   alt=""
                 />
                 <h4>Whole Bean</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-16">
                 <img
                   src="../IMG/Menu_ IMG/AT_HOME_COFFEE/VIA_Instant/SBX20190715_ViaInstantSweetenedIcedCoffee.jpg"
                   alt=""
                 />
-                <h4>VIA Instant</h4>
+                <h4>VIA® Instant</h4>
               </div>
             </div>
             <h3>Merchandise</h3>
             <span class="divider"></span>
             <div class="menu__merch flex flex-col gap-4">
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-17">
                 <img
                   src="../IMG/Menu_ IMG/MERCHANDISE/Cold_Cups/11148665PLSTCCLDCUP16OZ.jpg"
                   alt=""
                 />
                 <h4>Cold Cups</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-18">
                 <img
                   src="../IMG/Menu_ IMG/MERCHANDISE/Tumblers/11148708SSTMBLRGREENGRADIENT16OZ.jpg"
                   alt=""
                 />
                 <h4>Tumblers</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-19">
                 <img
                   src="../IMG/Menu_ IMG/MERCHANDISE/Mugs/11148647CERMCMUGBASEDSKTP14OZ.jpg"
                   alt=""
                 />
                 <h4>Mugs</h4>
               </div>
-              <div class="menu__items">
+              <div class="menu__items" id="menu__tabs-20">
                 <img
                   src="../IMG/Menu_ IMG/MERCHANDISE/Other/11140533_COFFEE_PRESS_CORE_DUAL_FILTER_FY23.jpg"
                   alt=""
@@ -193,9 +226,373 @@
               </div>
             </div>
           </div>
-          <div class="menu__content"></div>
+          <div class="menu__content">
+            <div class="menu__details" id="menu__tabs-1-content">
+              <h4 class="menu__details--title">
+                <a class="menu__back">Menu</a>&nbsp;/ Iced Energy
+              </h4>
+              <h2 class="menu__details--category">Iced Energy</h2>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Iced_Energy/TropicalCitrusEnergyDrink.jpg"
+                    alt=""
+                  />
+                  <h4>Tropical Citrus Iced Energy (VENTI ONLY)</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Iced_Energy/MelonBurstEnergyDrink.jpg"
+                    alt=""
+                  />
+                  <h4>Melon Burst Iced Energy (VENTI ONLY)</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Iced_Energy/FrozenTropicalCitrusStrawberryEnergyDrink.jpg"
+                    alt=""
+                  />
+                  <h4>
+                    Frozen Tropical Citrus Iced Energy with Strawberry Puree
+                    (VENTI ONLY)
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="menu__details" id="menu__tabs-2-content">
+              <h4 class="menu__details--title">
+                <a class="menu__back">Menu</a>&nbsp;/ Hot Coffees
+              </h4>
+              <h2 class="menu__details--category">Hot Coffees</h2>
+              <h3 class="menu__details--type">Americanos</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
+                    alt=""
+                  />
+                  <h4>Caffè Americano</h4>
+                </div>
+              </div>
+              <h3 class="menu__details--type">Brewed Coffees</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_BlondeRoast.jpg"
+                    alt=""
+                  />
+                  <h4>Featured Blonde Roast</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_PikePlaceRoast.jpg"
+                    alt=""
+                  />
+                  <h4>Featured Medium Roast - Pike Place® Roast</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_FeaturedDarkRoast.jpg"
+                    alt=""
+                  />
+                  <h4>Featured Dark Roast</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_DecafPikePlaceRoast.jpg"
+                    alt=""
+                  />
+                  <h4>Decaf Pike Place: Roast</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/Veranda_Blend_Hot.jpg"
+                    alt=""
+                  />
+                  <h4>Veranda Blend® Clover Vertica™</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/Veranda_Blend_Hot.jpg"
+                    alt=""
+                  />
+                  <h4>Featured Dark Roast Caffé Verona®</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/Veranda_Blend_Hot.jpg"
+                    alt=""
+                  />
+                  <h4>Starbucks: Green Apron Blend™</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_FeaturedDarkRoast.jpg"
+                    alt=""
+                  />
+                  <h4>Clover Vertica Bali Mount Batur Brewed Coffee</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeMisto.jpg"
+                    alt=""
+                  />
+                  <h4>Caffé Misto</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX22-507317_VietnamDalat_2023_WBReserve_Card.jpg"
+                    alt=""
+                  />
+                  <h4>Clover® Starbucks Reserve® Vietnam Da Lat</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee//SBX23-721653_MalawiSableFarms_2023_WBReserve_Card.jpg"
+                    alt=""
+                  />
+                  <h4>Clover® Malawi SableFarms StarbucksReserve®</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX23_710284_Rwanda_Sholi_Reserve_Card.jpg"
+                    alt=""
+                  />
+                  <h4>Clover® Starbucks Reserve® Rwanda Sholi</h4>
+                </div>
+              </div>
+              <h3 class="menu__details--type">Cappuccino</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_Cappuccino.jpg"
+                    alt=""
+                  />
+                  <h4>Cappuccino</h4>
+                </div>
+              </div>
+              <h3 class="menu__details--type">Espresso Shots</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_Espresso_Single.jpg"
+                    alt=""
+                  />
+                  <h4>Espresso</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_EspressoConPanna.jpg"
+                    alt=""
+                  />
+                  <h4>Espresso Con Pama</h4>
+                </div>
+              </div>
+              <h3 class="menu__details--type">Flat Whites</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20230406_FlatWhite.jpg"
+                    alt=""
+                  />
+                  <h4>Flat Whites</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20230406_HoneyAlmondmilkFlatWhite.jpg"
+                    alt=""
+                  />
+                  <h4>Honey Almond milk Flat White</h4>
+                </div>
+              </div>
+              <h3 class="menu__details--type">Lattes</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/Oleato_CaffeLatte.jpg"
+                    alt=""
+                  />
+                  <h4>Oleatot™ Caffé Latte with Oatmilk</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeLatte.jpg"
+                    alt=""
+                  />
+                  <h4>Caffé Latte</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CinnamonDolceLatte.jpg"
+                    alt=""
+                  />
+                  <h4>Cinnamon Dolce Latte</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeLatte.jpg"
+                    alt=""
+                  />
+                  <h4>Starbucks® Blonde Vanilla Latte</h4>
+                </div>
+              </div>
+              <h3 class="menu__details--type">Macchiatos</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20211029_CaramelMacchiato.jpg"
+                  />
+                  <h4>Caramel Macchiato</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_EspressoMacchiato.jpg"
+                    alt=""
+                  />
+                  <h4>Espresso Macchiato</h4>
+                </div>
+              </div>
+              <h3 class="menu__details--type">Mochas</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20220607_CaffeMocha.jpg"
+                  />
+                  <h4>Caffe Mocha</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_WhiteChocolateMocha.jpg"
+                    alt=""
+                  />
+                  <h4>White Chocolate Mocha</h4>
+                </div>
+              </div>
+              <h3 class="menu__details--type">Coffee Travelers</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20191031_CoffeeTraveler.jpg"
+                  />
+                  <h4>Coffee Traveler - Veranda Blend®</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20191031_CoffeeTraveler.jpg"
+                    alt=""
+                  />
+                  <h4>Coffee Traveler - Dark Roast</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20191031_CoffeeTraveler.jpg"
+                  />
+                  <h4>Coffee Traveler - Pike Place® Roast</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20191031_CoffeeTraveler.jpg"
+                    alt=""
+                  />
+                  <h4>Coffee Traveler - Decaf Pike Place® Roast</h4>
+                </div>
+              </div>
+            </div>
+            <div class="menu__details" id="menu__tabs-3-content">
+              <h4 class="menu__details--title">
+                <a class="menu__back">Menu</a>&nbsp;/ Cold Coffees
+              </h4>
+              <h2 class="menu__details--category">Cold Coffees</h2>
+              <h3 class="menu__details--type">Cold Brews</h3>
+              <span class="divider"></span>
+              <div class="menu__details--wrap">
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Cold_Coffee/SBX20221130_WhiteChocolateMacadamiaColdBrew.jpg"
+                    alt=""
+                  />
+                  <h4>White Chocolate Macadamia Cream Cold Brew</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Cold_Coffee/SBX20221014_CinnamonCaramelCreamColdBrew.jpg"
+                    alt=""
+                  />
+                  <h4>Cinnamon Caramel Cream Cold Brew</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
+                    alt=""
+                  />
+                  <h4>Salted Caramel Cream Cold Brew</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
+                    alt=""
+                  />
+                  <h4>Chocolate Cream Cold Brew</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
+                    alt=""
+                  />
+                  <h4>Starbucks® Cold Brew Coffee</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
+                    alt=""
+                  />
+                  <h4>Vanilla Sweet Cream Cold Brew</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
+                    alt=""
+                  />
+                  <h4>Nondairy Salted Caramel Cream Cold Brew</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
+                    alt=""
+                  />
+                  <h4>Nondairy Vanilla Sweet Cream Cold Brew</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
+                    alt=""
+                  />
+                  <h4>Cold Brew with Nondairy Vanilla Sweet Cream Cold Foam</h4>
+                </div>
+                <div class="menu__foods">
+                  <img
+                    src="../IMG/Menu_ IMG/DRINKS/Hot_Coffee/SBX20190617_CaffeAmericano.jpg"
+                    alt=""
+                  />
+                  <h4>Nondairy Chocolate Cream Cold Brew</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <script src="./js/toggle.js"></script>
+    <script src="./js/menuTab.js"></script>
   </body>
 </html>

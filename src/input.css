@@ -10,46 +10,88 @@
   .container {
     @apply max-w-[1600px] w-full px-4 mx-auto;
   }
-
 }
-@layer components{
-  .header{
+@layer components {
+  .header {
     @apply py-3 w-full bg-white;
   }
-  .header__wrapper{
+  .header__wrapper {
     @apply flex justify-between items-center gap-[22.5rem];
   }
-  .header__wrapper img{
+  .header__wrapper img {
     @apply w-[2.5rem];
   }
-  .header__navigation{
+  .header__navigation {
     @apply flex fixed flex-col w-[22rem] py-5 top-[6rem] duration-700 right-[-100%];
   }
-  .header__navigation.open{
+  .header__navigation.open {
     @apply right-0 duration-700 z-50;
   }
-  .header__nav{
-    @apply flex flex-col gap-6
+  .header__nav {
+    @apply flex flex-col gap-6;
   }
-  .header__nav li a{
+  .header__nav li a {
     @apply text-black/80 text-xl;
   }
-  .toggle__menu{
+  .toggle__menu {
     @apply flex flex-col gap-[0.26rem] z-50;
   }
-  .toggle__menu span{
+  .toggle__menu span {
     @apply content-[*] bg-[#00000094] w-5 h-[2px] rounded-3xl;
   }
-}
-@layer utilities{
-  .btn{
-    @apply  border px-4 py-1 rounded-3xl text-sm;
+  /* menu */
+  .menu__wrapper {
+    @apply py-4;
   }
-  .btn.bg--transparent{
+  .menu__wrapper h2 {
+    @apply text-2xl font-bold;
+  }
+  .menu__tab h3 {
+    @apply text-xl font-bold pt-4;
+  }
+  .menu__items {
+    @apply flex flex-row items-center gap-6;
+  }
+  .menu__items {
+    @apply cursor-pointer;
+  }
+  .menu__items img {
+    @apply w-[4.5rem] rounded-full;
+  }
+  .menu__details {
+    @apply py-8;
+  }
+  .menu__details--title {
+    @apply text-black/50;
+  }
+  .menu__details--category {
+    @apply text-xl font-bold pt-4;
+  }
+  .menu__details--type{
+    @apply text-lg font-bold pt-4;
+  }
+  .menu__details--wrap {
+    @apply grid grid-cols-2 gap-12 my-8;
+  }
+  .menu__foods {
+    @apply flex flex-col items-center w-40 mx-auto text-center;
+  }
+  .menu__foods img {
+    @apply w-36 rounded-full;
+  }
+  .menu__foods h4 {
+    @apply text-base leading-6 pt-4;
+  }
+}
+@layer utilities {
+  .btn {
+    @apply border px-4 py-1 rounded-3xl text-sm;
+  }
+  .btn.bg--transparent {
     @apply bg-transparent border border-black px-3;
   }
-  .btn.bg--black{
-    @apply  bg-black text-white border border-black;
+  .btn.bg--black {
+    @apply bg-black text-white border border-black;
   }
   .menuNav {
     @apply border-b;
@@ -60,35 +102,7 @@
   .menuNav__nav li {
     @apply pr-8 text-sm;
   }
-}
-
-
-@layer components {
-  /* menu */
-  .menu__wrapper {
-    @apply py-4;
+  .divider {
+    @apply block w-[100%] h-[1px] bg-black/10 my-4;
   }
-  .menu__wrapper h2 {
-    @apply text-2xl font-bold;
-  }
-  .menu__tab h3{
-    @apply text-xl font-bold;
-  }
-  /* .menu__tab span{
-    @apply 
-  } */
-  .menu__items {
-    @apply flex flex-row items-center gap-6;
-  }
-  .menu__items {
-    @apply cursor-pointer;
-  }
-  .menu__items img {
-    @apply w-[4.5rem] rounded-full;
-  }
-}
-@layer utilities {
-    .divider{
-        @apply w-[100%] h-[1px] bg-black/20 m-8;
-    }
 }
