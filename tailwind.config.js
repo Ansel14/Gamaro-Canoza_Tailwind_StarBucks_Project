@@ -10,10 +10,13 @@ module.exports = {
         offWhite: "#f9f9f9",
         greenPrimary: "#006241",
         greenAccent: "#00754a",
-        greenDark: "#cba258",
+        greenDark: "#1e3932",
         greenLight: "#d4e9e2",
         gold: "#cba258",
       },
+      backgroundImage:{
+        banner: " url('../IMG/Rewards__IMG/hero-mobile_2021.jpg')"
+      },  
     },
   },
   plugins: [],

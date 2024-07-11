@@ -10,26 +10,37 @@
   .container {
     @apply max-w-[1600px] w-full px-4 mx-auto;
   }
-
+  .steps__content{
+    @apply flex gap-[1rem];
+  }
+  .steps__text h4{
+    @apply font-medium mb-5;
+  }
+  .steps__text p{
+    @apply text-[15px];
+  }
+  .steps__text span{
+    @apply underline text-greenAccent
+  }
 }
 @layer components{
   .header{
     @apply py-3 w-full bg-white;
   }
   .header__wrapper{
-    @apply flex justify-between items-center gap-[22.5rem];
+    @apply flex justify-between items-center gap-[22rem];
   }
   .header__wrapper img{
     @apply w-[2.5rem];
   }
   .header__navigation{
-    @apply flex fixed flex-col w-[22rem] py-5 top-[6rem] duration-700 right-[-100%];
+    @apply flex fixed flex-col w-[22rem] py-5 top-[4rem] duration-700 h-full right-[-100%];
   }
   .header__navigation.open{
     @apply right-0 duration-700 z-50;
   }
   .header__nav{
-    @apply flex flex-col gap-6
+    @apply flex flex-col gap-7
   }
   .header__nav li a{
     @apply text-black/80 text-xl;
@@ -40,6 +51,22 @@
   .toggle__menu span{
     @apply content-[*] bg-[#00000094] w-5 h-[2px] rounded-3xl;
   }
+    /* menu */
+    .menu__wrapper{
+      @apply py-4;
+    }
+    .menu__wrapper h2{
+      @apply text-2xl font-bold;
+    }
+    .menu__items {
+      @apply flex flex-row items-center gap-6;
+    }
+    .menu__items {
+      @apply cursor-pointer;
+    }
+    .menu__items img {
+      @apply w-20 rounded-full;
+    }
 }
 @layer utilities{
   .btn{
@@ -50,6 +77,12 @@
   }
   .btn.bg--black{
     @apply  bg-black text-white border border-black;
+  }
+  .btn.bg--white{
+    @apply border border-white bg-transparent text-white py-3;
+  }
+  .btn.bg--banner{
+    @apply border bg-greenAccent py-2
   }
   .menuNav {
     @apply border-b;
@@ -63,23 +96,5 @@
 }
 
 
-@layer components {
-  /* menu */
-  .menu__wrapper{
-    @apply py-4;
-  }
-  .menu__wrapper h2{
-    @apply text-2xl font-bold;
-  }
-  .menu__items {
-    @apply flex flex-row items-center gap-6;
-  }
-  .menu__items {
-    @apply cursor-pointer;
-  }
-  .menu__items img {
-    @apply w-20 rounded-full;
-  }
-}
-@layer utilities {
-}
+
+
