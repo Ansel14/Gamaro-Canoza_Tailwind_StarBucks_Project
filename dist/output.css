@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 
 /*
 ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
@@ -462,6 +462,26 @@ body{
   padding-right: 1rem;
 }
 
+<<<<<<< HEAD
+=======
+.menuNav{
+  border-bottom-width: 1px;
+}
+
+.menuNav__nav{
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menuNav__nav li{
+  padding-right: 2rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+>>>>>>> 3af8240e104722a673cd32005d420084b4847a3c
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -604,6 +624,7 @@ body{
   }
 }
 
+<<<<<<< HEAD
 .header{
   width: 100%;
   --tw-bg-opacity: 1;
@@ -667,12 +688,39 @@ body{
   background-color: #00000094;
   --tw-content: *;
   content: var(--tw-content);
+=======
+/* menu */
+
+.menu__wrapper{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu__wrapper h2{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.menu__items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+}
+
+.menu__items img{
+  width: 5rem;
+  border-radius: 9999px;
+>>>>>>> 3af8240e104722a673cd32005d420084b4847a3c
 }
 
 .flex{
   display: flex;
 }
 
+<<<<<<< HEAD
 .h-\[0\.2px\]{
   height: 0.2px;
 }
@@ -713,10 +761,13 @@ body{
   flex-direction: row;
 }
 
+=======
+>>>>>>> 3af8240e104722a673cd32005d420084b4847a3c
 .flex-col{
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 .items-center{
   align-items: center;
 }
@@ -807,3 +858,26 @@ body{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+=======
+.gap-6{
+  gap: 1.5rem;
+}
+
+.border-b-\[1px\]{
+  border-bottom-width: 1px;
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-offWhite{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 249 249 / var(--tw-bg-opacity));
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+>>>>>>> 3af8240e104722a673cd32005d420084b4847a3c

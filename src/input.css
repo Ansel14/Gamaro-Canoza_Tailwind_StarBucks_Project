@@ -1,15 +1,16 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    body {
+@layer base {
+  body {
     @apply font-helvetica overflow-x-hidden;
   }
   .container {
     @apply max-w-[1600px] w-full px-4 mx-auto;
   }
+<<<<<<< HEAD
 
 }
 @layer components{
@@ -53,3 +54,35 @@
   }
 
 }
+=======
+  .menuNav {
+    @apply border-b;
+  }
+  .menuNav__nav {
+    @apply flex flex-row py-4;
+  }
+  .menuNav__nav li {
+    @apply pr-8 text-sm;
+  }
+}
+@layer components {
+  /* menu */
+  .menu__wrapper{
+    @apply py-4;
+  }
+  .menu__wrapper h2{
+    @apply text-2xl font-bold;
+  }
+  .menu__items {
+    @apply flex flex-row items-center gap-6;
+  }
+  .menu__items {
+    @apply cursor-pointer;
+  }
+  .menu__items img {
+    @apply w-20 rounded-full;
+  }
+}
+@layer utilities {
+}
+>>>>>>> 3af8240e104722a673cd32005d420084b4847a3c

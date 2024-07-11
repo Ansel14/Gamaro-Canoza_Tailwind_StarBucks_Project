@@ -7,6 +7,7 @@ module.exports = {
         helvetica: "Helvetica Neue",
       },
       colors: {
+        offWhite: "#f9f9f9",
         greenPrimary: "#006241",
         greenAccent: "#00754a",
         greenDark: "#cba258",
