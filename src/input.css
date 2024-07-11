@@ -10,11 +10,46 @@
   .container {
     @apply max-w-[1600px] w-full px-4 mx-auto;
   }
-  .
-}
-@layer components{
 
 }
+@layer components{
+  .header{
+    @apply py-3 w-full bg-white;
+  }
+  .header__wrapper{
+    @apply flex justify-between items-center gap-[22.5rem];
+  }
+  .header__wrapper img{
+    @apply w-[2.5rem];
+  }
+  .header__navigation{
+    @apply flex fixed flex-col w-[22rem] py-5 top-[6rem] duration-700 right-[-100%];
+  }
+  .header__navigation.open{
+    @apply right-0 duration-700 z-50;
+  }
+  .header__nav{
+    @apply flex flex-col gap-6
+  }
+  .header__nav li a{
+    @apply text-black/80 text-xl;
+  }
+  .toggle__menu{
+    @apply flex flex-col gap-[0.26rem] z-50;
+  }
+  .toggle__menu span{
+    @apply content-[*] bg-[#00000094] w-5 h-[2px] rounded-3xl;
+  }
+}
 @layer utilities{
+  .btn{
+    @apply  border px-4 py-1 rounded-3xl text-sm;
+  }
+  .btn.bg--transparent{
+    @apply bg-transparent border border-black px-3;
+  }
+  .btn.bg--black{
+    @apply  bg-black text-white border border-black;
+  }
 
 }
