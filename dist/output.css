@@ -462,6 +462,26 @@ body{
   padding-right: 1rem;
 }
 
+.steps__content{
+  display: flex;
+  gap: 1rem;
+}
+
+.steps__text h4{
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.steps__text p{
+  font-size: 15px;
+}
+
+.steps__text span{
+  --tw-text-opacity: 1;
+  color: rgb(0 117 74 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -616,7 +636,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 22.5rem;
+  gap: 22rem;
 }
 
 .header__wrapper img{
@@ -625,9 +645,10 @@ body{
 
 .header__navigation{
   position: fixed;
-  top: 6rem;
+  top: 4rem;
   right: -100%;
   display: flex;
+  height: 100%;
   width: 22rem;
   flex-direction: column;
   padding-top: 1.25rem;
@@ -644,7 +665,7 @@ body{
 .header__nav{
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .header__nav li a{
@@ -702,6 +723,7 @@ body{
   border-radius: 9999px;
 }
 
+<<<<<<< HEAD
 .menu__details{
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -752,6 +774,22 @@ body{
   padding-top: 1rem;
   font-size: 1rem;
   line-height: 1.5rem;
+=======
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mt-\[1rem\]{
+  margin-top: 1rem;
+>>>>>>> d2ba9478596992dcfe461291e32ee71ab11e349f
 }
 
 .flex{
@@ -762,8 +800,12 @@ body{
   height: 1.5px;
 }
 
-.w-\[20rem\]{
-  width: 20rem;
+.h-\[63vh\]{
+  height: 63vh;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .flex-row{
@@ -778,12 +820,29 @@ body{
   align-items: center;
 }
 
+<<<<<<< HEAD
+.gap-4{
+  gap: 1rem;
+=======
+.justify-between{
+  justify-content: space-between;
+}
+
 .gap-4{
   gap: 1rem;
 }
 
 .gap-5{
   gap: 1.25rem;
+>>>>>>> d2ba9478596992dcfe461291e32ee71ab11e349f
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-9{
+  gap: 2.25rem;
 }
 
 .border-b-\[1px\]{
@@ -799,9 +858,45 @@ body{
   background-color: rgb(0 0 0 / 0.1);
 }
 
+.bg-greenDark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 57 50 / var(--tw-bg-opacity));
+}
+
 .bg-offWhite{
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-banner{
+  background-image:  url('../IMG/Rewards__IMG/hero-mobile_2021.jpg');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.object-bottom{
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-\[3rem\]{
+  padding: 3rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-2{
@@ -810,6 +905,50 @@ body{
 
 .pt-3{
   padding-top: 0.75rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .btn{
@@ -842,6 +981,25 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.btn.bg--white{
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  background-color: transparent;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.btn.bg--banner{
+  border-width: 1px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 117 74 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .menuNav{
   border-bottom-width: 1px;
 }
@@ -859,6 +1017,7 @@ body{
   line-height: 1.25rem;
 }
 
+<<<<<<< HEAD
 .divider{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -867,3 +1026,8 @@ body{
   width: 100%;
   background-color: rgb(0 0 0 / 0.1);
 }
+=======
+
+
+
+>>>>>>> d2ba9478596992dcfe461291e32ee71ab11e349f
