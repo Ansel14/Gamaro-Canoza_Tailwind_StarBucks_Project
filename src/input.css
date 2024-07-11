@@ -10,7 +10,6 @@
   .container {
     @apply max-w-[1600px] w-full px-4 mx-auto;
   }
-<<<<<<< HEAD
 
 }
 @layer components{
@@ -52,9 +51,6 @@
   .btn.bg--black{
     @apply  bg-black text-white border border-black;
   }
-
-}
-=======
   .menuNav {
     @apply border-b;
   }
@@ -65,6 +61,8 @@
     @apply pr-8 text-sm;
   }
 }
+
+
 @layer components {
   /* menu */
   .menu__wrapper{
@@ -85,4 +83,3 @@
 }
 @layer utilities {
 }
->>>>>>> 3af8240e104722a673cd32005d420084b4847a3c
