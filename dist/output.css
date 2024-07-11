@@ -634,6 +634,16 @@ body{
   font-weight: 700;
 }
 
+.menu__tab h3{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+/* .menu__tab span{
+    @apply 
+  } */
+
 .menu__items{
   display: flex;
   flex-direction: row;
@@ -643,7 +653,7 @@ body{
 }
 
 .menu__items img{
-  width: 5rem;
+  width: 4.5rem;
   border-radius: 9999px;
 }
 
@@ -655,8 +665,8 @@ body{
   flex-direction: column;
 }
 
-.gap-6{
-  gap: 1.5rem;
+.gap-4{
+  gap: 1rem;
 }
 
 .border-b-\[1px\]{
@@ -675,4 +685,11 @@ body{
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.divider{
+  margin: 2rem;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(0 0 0 / 0.2);
 }

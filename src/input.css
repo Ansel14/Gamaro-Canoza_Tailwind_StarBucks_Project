@@ -22,12 +22,18 @@
 }
 @layer components {
   /* menu */
-  .menu__wrapper{
+  .menu__wrapper {
     @apply py-4;
   }
-  .menu__wrapper h2{
+  .menu__wrapper h2 {
     @apply text-2xl font-bold;
   }
+  .menu__tab h3{
+    @apply text-xl font-bold;
+  }
+  /* .menu__tab span{
+    @apply 
+  } */
   .menu__items {
     @apply flex flex-row items-center gap-6;
   }
@@ -35,8 +41,11 @@
     @apply cursor-pointer;
   }
   .menu__items img {
-    @apply w-20 rounded-full;
+    @apply w-[4.5rem] rounded-full;
   }
 }
 @layer utilities {
+    .divider{
+        @apply w-[100%] h-[1px] bg-black/20 m-8;
+    }
 }
