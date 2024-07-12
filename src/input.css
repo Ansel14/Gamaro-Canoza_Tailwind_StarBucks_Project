@@ -31,6 +31,60 @@
   .menuNav__nav li {
     @apply pr-8 text-sm;
   }
+  .favorites__header {
+    @apply flex flex-col items-center;
+  }
+  .favorites__title {
+    @apply text-2xl font-bold;
+  }
+  .favorites__tab {
+    @apply relative flex flex-row text-xl;
+  }
+  .favorites__tab h3 {
+    @apply px-6 py-4;
+  }
+  .favorites__tab h3 i {
+    @apply text-xs text-gold;
+  }
+  /* .favorites__tab:nth-of-type(1).active ~ .favorites__slider {
+    @apply translate-x-[0];
+  }
+  .favorites__tab:nth-of-type(2).active ~ .favorites__slider {
+    @apply translate-x-[100%];
+  } */
+  .favorites__stars {
+    @apply w-[94.88px];
+  }
+  .favorites__slider {
+    @apply absolute flex bg-greenPrimary h-1 w-[94.88px] z-10 duration-200 top-14;
+  }
+  .favorites__details {
+    @apply hidden;
+  }
+  .favorites__details.active {
+    @apply block;
+  }
+  .favorites__products {
+    @apply flex flex-col items-center text-center
+    /* desktop */
+    lg:flex-row lg:justify-center lg:pt-14 lg:pb-8 lg:gap-8;
+  }
+  .favorites__products img {
+    @apply /* desktop */ lg:w-96 lg:max-w-96;
+  }
+  .favorites__products--text {
+    @apply /* desktop */ lg:text-left;
+  }
+  .favorites__products--text h3 {
+    @apply text-lg font-medium pb-6 max-w-[28rem]
+    /* desktop */
+    lg:text-2xl lg:max-w-[26rem];
+  }
+  .favorites__products--text p {
+    @apply font-light text-base pb-8 max-w-[28rem]
+    /* desktop */
+    lg:text-lg lg:max-w-[26rem];
+  }
 }
 @layer components {
   .header {
@@ -62,13 +116,20 @@
   }
   /* menu */
   .menu__wrapper {
-    @apply py-4;
+    @apply py-4
+    /* desktop */
+    lg:flex lg:flex-row lg:gap-16;
   }
   .menu__wrapper h2 {
     @apply text-2xl font-bold;
   }
   .menu__items {
     @apply flex flex-row items-center gap-6 cursor-pointer;
+  }
+  .menu__desktop {
+    @apply hidden
+    /* desktop */
+    lg:block;
   }
   .menu__tab {
     @apply hidden;
@@ -79,8 +140,26 @@
   .menu__tab h3 {
     @apply text-xl font-bold pt-4;
   }
+  .menu__tab h2 {
+    @apply lg:py-6;
+  }
+  .menu__tab .menu__items {
+    @apply w-[35rem];
+  }
+  .menu__desktop {
+    @apply w-[14rem];
+  }
+  .menu__desktop h3 {
+    @apply text-xl font-bold pt-6 pb-4;
+  }
+  .menu__desktop h4 {
+    @apply text-black/50;
+  }
+
   .menu__items img {
-    @apply w-[4.5rem] rounded-full;
+    @apply w-[4.5rem] rounded-full
+    /* desktop */
+    lg:w-28;
   }
   .menu__back {
     @apply cursor-pointer;
@@ -95,22 +174,32 @@
     @apply text-black/50;
   }
   .menu__details--category {
-    @apply text-xl font-bold pt-4;
+    @apply text-xl font-bold pt-4
+    /* desktop */
+    lg:text-2xl;
   }
   .menu__details--type {
-    @apply text-lg font-bold pt-4;
+    @apply text-lg font-bold pt-4
+    /* desktop */
+    lg:pt-8 lg:text-xl;
   }
   .menu__details--wrap {
-    @apply grid grid-cols-2 gap-12 my-8;
+    @apply grid grid-cols-2 gap-12 my-8
+    /* desktop */
+    lg:grid-cols-4 lg:gap-24 lg:gap-y-16;
   }
   .menu__foods {
-    @apply flex flex-col items-center w-40 mx-auto text-center;
+    @apply flex flex-col items-center w-40 mx-auto text-center
+    /* desktop */
+    lg:w-56;
   }
   .menu__foods img {
     @apply w-36 rounded-full;
   }
   .menu__foods h4 {
-    @apply text-base leading-6 pt-4;
+    @apply text-base leading-6 pt-4
+    /* desktop */
+    lg:text-lg;
   }
 }
 @layer utilities {

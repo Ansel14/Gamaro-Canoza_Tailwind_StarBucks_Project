@@ -137,38 +137,38 @@
       </div>
     </section>
 
-    <!-- favorites -->
+    <!-- favorites - jake -->
     <section class="favorites">
-        <div class="favorites__wrapper">
-          <div class="favorites__header">
-            <div class="favorites__title">
-              <h2>Get your favorites for free</h2>
-            </div>
-            <div class="favorites__tab">
-              <ul>
-                <li class="favorites__stars" id="favorites-tabs-1">
-                  25<i class="fa-solid fa-star"></i>
-                </li>
-                <li class="favorites__stars" id="favorites-tabs-2">
-                  100<i class="fa-solid fa-star"></i>
-                </li>
-                <li class="favorites__stars" id="favorites-tabs-3">
-                  200<i class="fa-solid fa-star"></i>
-                </li>
-                <li class="favorites__stars" id="favorites-tabs-4">
-                  300<i class="fa-solid fa-star"></i>
-                </li>
-                <li class="favorites__stars" id="favorites-tabs-5">
-                  400<i class="fa-solid fa-star"></i>
-                </li>
-              </ul>
-            </div>
+      <div class="favorites__wrapper">
+        <div class="favorites__header bg-greenLightest shadow-lg pt-16">
+          <div class="favorites__title">
+            <h2>Get your favorites for free</h2>
           </div>
-          <div class="favorites__content bg-green">
-            <div class="favorites__details" id="favorites-tabs-1-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/25.png" alt="" />
+          <div class="favorites__tab">
+            <h3 class="favorites__stars active" id="favorites-tabs-1">
+              25<i class="fa-solid fa-star"></i>
+            </h3>
+            <h3 class="favorites__stars" id="favorites-tabs-2">
+              100<i class="fa-solid fa-star"></i>
+            </h3>
+            <h3 class="favorites__stars" id="favorites-tabs-3">
+              200<i class="fa-solid fa-star"></i>
+            </h3>
+            <h3 class="favorites__stars" id="favorites-tabs-4">
+              300<i class="fa-solid fa-star"></i>
+            </h3>
+            <h3 class="favorites__stars" id="favorites-tabs-5">
+              400<i class="fa-solid fa-star"></i>
+            </h3>
+            <span class="favorites__slider"></span>
+          </div>
+        </div>
+        <div class="favorites__content bg-greenLight">
+          <div class="favorites__details active" id="favorites-tabs-1-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/25.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>Customize your drink</h3>
                   <p>
                     Make your drink just right with an extra espresso shot,
@@ -177,10 +177,12 @@
                 </div>
               </div>
             </div>
-            <div class="favorites__details" id="favorites-tabs-2-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/100.png" alt="" />
+          </div>
+          <div class="favorites__details" id="favorites-tabs-2-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/100.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>
                     Brewed hot or iced coffee or tea, bakery item, packaged
                     snack and more
@@ -192,10 +194,12 @@
                 </div>
               </div>
             </div>
-            <div class="favorites__details" id="favorites-tabs-3-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/200.png" alt="" />
+          </div>
+          <div class="favorites__details" id="favorites-tabs-3-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/200.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>
                     Handcrafted drink (Cold Brew, lattes and more) or hot
                     breakfast
@@ -207,10 +211,12 @@
                 </div>
               </div>
             </div>
-            <div class="favorites__details" id="favorites-tabs-4-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/300.png" alt="" />
+          </div>
+          <div class="favorites__details" id="favorites-tabs-4-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/300.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>Sandwich, protein box or at-home coffee</h3>
                   <p>
                     Enjoy a PM pick-me-up with a lunch sandwich, protein box or
@@ -219,10 +225,12 @@
                 </div>
               </div>
             </div>
-            <div class="favorites__details" id="favorites-tabs-5-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/400.png" alt="" />
+          </div>
+          <div class="favorites__details" id="favorites-tabs-5-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/400.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>Select Starbucks® merchandise</h3>
                   <p>
                     Take home a signature cup, drink tumbler or your choice of
@@ -233,8 +241,10 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
 
     <script src="./js/toggle.js"></script>
+    <script src="./js/rewardsTab.js"></script>
   </body>
 </html>
