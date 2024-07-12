@@ -13,6 +13,7 @@ module.exports = {
         greenDark: "#1e3932",
         greenLight: "#d4e9e2",
         gold: "#cba258",
+        gray: "#f2f0eb",
       },
       backgroundImage:{
         banner: " url('../IMG/Rewards__IMG/hero-mobile_2021.jpg')"
