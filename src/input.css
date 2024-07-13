@@ -46,16 +46,25 @@
   .favorites__tab h3 i {
     @apply text-xs text-gold;
   }
-  /* .favorites__tab:nth-of-type(1).active ~ .favorites__slider {
+  .favorites__tab .favorites__stars:first-child.active ~ .favorites__glider {
     @apply translate-x-[0];
   }
-  .favorites__tab:nth-of-type(2).active ~ .favorites__slider {
+  .favorites__tab .favorites__stars:nth-child(2).active ~ .favorites__glider {
     @apply translate-x-[100%];
-  } */
+  }
+  .favorites__tab .favorites__stars:nth-child(3).active ~ .favorites__glider {
+    @apply translate-x-[200%];
+  }
+  .favorites__tab .favorites__stars:nth-child(4).active ~ .favorites__glider {
+    @apply translate-x-[300%];
+  }
+  .favorites__tab .favorites__stars:nth-child(5).active ~ .favorites__glider {
+    @apply translate-x-[400%];
+  }
   .favorites__stars {
     @apply w-[94.88px];
   }
-  .favorites__slider {
+  .favorites__glider {
     @apply absolute flex bg-greenPrimary h-1 w-[94.88px] z-10 duration-200 top-14;
   }
   .favorites__details {
