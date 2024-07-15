@@ -12,12 +12,13 @@ module.exports = {
         greenAccent: "#00754a",
         greenDark: "#1e3932",
         greenLight: "#d4e9e2",
+        greenLightest: "#f1f8f5",
         gold: "#cba258",
         gray: "#f2f0eb",
       },
-      backgroundImage:{
-        banner: " url('../IMG/Rewards__IMG/hero-mobile_2021.jpg')"
-      },  
+      backgroundImage: {
+        banner: " url('../IMG/Rewards__IMG/hero-mobile_2021.jpg')",
+      },
     },
   },
   plugins: [],

@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   body {
     @apply font-helvetica overflow-x-hidden;
@@ -11,23 +10,12 @@
   .container {
     @apply max-w-[1600px] w-full px-4 mx-auto;
   }
-<<<<<<< HEAD
-  .steps__content {
-=======
   /* Steps in Rewards */
-  .steps__content{
->>>>>>> b515e7033c33a65ae46faf7c0561bf991c15b9dd
+  .steps__content {
     @apply flex gap-[1rem];
   }
   .steps__text h4 {
     @apply font-medium mb-5;
-  }
-<<<<<<< HEAD
-  .steps__text p {
-    @apply text-[15px];
-  }
-  .steps__text span {
-    @apply underline text-greenAccent;
   }
   .menuNav {
     @apply border-b;
@@ -37,104 +25,104 @@
   }
   .menuNav__nav li {
     @apply pr-8 text-sm;
-=======
-  .steps__text p{
+  }
+  .steps__text p {
     @apply text-[15px] max-w-[43rem];
   }
-  .steps__text span{
+  .steps__text span {
     @apply underline text-greenAccent;
   }
   /* Extra Rewards */
-  .extra__items{
+  .extra__items {
     @apply flex  mt-16 gap-4;
   }
-  .extra__items--text{
-    @apply flex flex-col gap-4
-  }
-  .extra__items--text h4{
-    @apply font-medium
-  }
-  .extra__items--text p{
-    @apply text-sm;
-  }
-  .extra__items--text span{
-    @apply underline text-greenPrimary;
-  }
-  .extra__img img{
-    @apply max-w-[7rem]
-  }
-  /* Star */
-  .star__items--info{
-    @apply flex gap-4;
-  }
-  .star__items--img img{
-    @apply w-28
-  }
-  .star__items{
-    @apply flex flex-col gap-8
-  }
-  .star__content{
-    @apply flex flex-col gap-[2rem]
-  }
-  .star__items--text{
+  .extra__items--text {
     @apply flex flex-col gap-4;
   }
-  .star__items--text h4{
+  .extra__items--text h4 {
     @apply font-medium;
   }
-  .star__items--text p{
+  .extra__items--text p {
+    @apply text-sm;
+  }
+  .extra__items--text span {
+    @apply underline text-greenPrimary;
+  }
+  .extra__img img {
+    @apply max-w-[7rem];
+  }
+  /* Star */
+  .star__items--info {
+    @apply flex gap-4;
+  }
+  .star__items--img img {
+    @apply w-28;
+  }
+  .star__items {
+    @apply flex flex-col gap-8;
+  }
+  .star__content {
+    @apply flex flex-col gap-[2rem];
+  }
+  .star__items--text {
+    @apply flex flex-col gap-4;
+  }
+  .star__items--text h4 {
+    @apply font-medium;
+  }
+  .star__items--text p {
     @apply text-[.9rem] max-w-[18rem];
   }
   /* Prizes */
-  .prize__items{
+  .prize__items {
     @apply flex gap-4 items-center;
   }
-  .prize__items span{
+  .prize__items span {
     @apply text-greenPrimary underline;
   }
-  .prize__items i{
+  .prize__items i {
     @apply text-sm text-greenPrimary;
   }
-  .prize__img img{
+  .prize__img img {
     @apply max-w-[7rem];
   }
-  .prize__text p{
+  .prize__text p {
     @apply text-sm;
   }
-  .prize__content{
+  .prize__content {
     @apply flex flex-col gap-8;
   }
-  .prize__btn{
-    @apply mx-auto pt-8
+  .prize__btn {
+    @apply mx-auto pt-8;
   }
   /* Questions */
-  .question__wrapper span{
+  .question__wrapper span {
     @apply text-greenPrimary underline text-sm;
   }
-  .question__wrapper i{
+  .question__wrapper i {
     @apply text-greenPrimary;
   }
   /* Restrictions */
-  .restriction__wrapper span{
+  .restriction__wrapper span {
     @apply text-greenPrimary underline text-sm;
   }
-  .restriction__wrapper i{
+  .restriction__wrapper i {
     @apply text-greenPrimary text-xs;
   }
-  .restriction__wrapper{
-    @apply flex flex-col gap-4;  
+  .restriction__wrapper {
+    @apply flex flex-col gap-4;
   }
-  .restriction__wrapper p{
+  .restriction__wrapper p {
     @apply text-sm font-light;
   }
-  .restriction__content h4{
+  .restriction__content h4 {
     @apply text-xs font-bold tracking-widest;
   }
-  .restriction__items{
+  .restriction__items {
     @apply flex flex-col gap-4;
->>>>>>> b515e7033c33a65ae46faf7c0561bf991c15b9dd
   }
 }
+
 @layer components {
   .header {
     @apply py-3 w-full bg-white;
@@ -145,28 +133,27 @@
   .header__wrapper img {
     @apply w-[2.5rem];
   }
-<<<<<<< HEAD
   .header__navigation {
-=======
-  .header__navigation{
->>>>>>> b515e7033c33a65ae46faf7c0561bf991c15b9dd
     @apply flex fixed flex-col w-[22rem] py-5 top-[4rem] duration-700 h-full right-[-100%];
   }
-  .header__navigation span{
+  .header__navigation span {
     @apply w-full h-[1.5px] bg-black/10 mt-[1rem];
   }
   .header__navigation.open {
     @apply right-0 duration-700 z-50;
   }
   .header__nav {
-<<<<<<< HEAD
-    @apply flex flex-col gap-7;
-=======
-    @apply flex flex-col gap-6;
+    @apply flex flex-col gap-7 pt-8
+  /* desktop */
+    lg:flex-row lg:pt-0;
   }
-  .header__nav{
-    @apply flex flex-col gap-7
->>>>>>> b515e7033c33a65ae46faf7c0561bf991c15b9dd
+  .header__nav li {
+    @apply /* desktop */
+    lg:py-9;
+  }
+  .header__nav li.header__active {
+    @apply /* desktop */
+    lg:border-b lg:border-b-greenPrimary lg:border-b-[6px] lg:pb-7;
   }
   .header__nav li a {
     @apply text-black/80 text-xl;
@@ -177,31 +164,24 @@
   .toggle__menu span {
     @apply content-[*] bg-[#00000094] w-5 h-[2px] rounded-3xl;
   }
-<<<<<<< HEAD
+
   /* menu */
   .menu__wrapper {
     @apply py-4;
-=======
-
-
-    /* menu */
-    .menu__wrapper{
-      @apply py-4;
-    }
-    .menu__wrapper h2{
-      @apply text-2xl font-bold;
-    }
-    .menu__items {
-      @apply flex flex-row items-center gap-6 cursor-pointer;
-    }
-    .menu__items img {
-      @apply w-20 rounded-full;
-    }
+  }
+  .menu__wrapper h2 {
+    @apply text-2xl font-bold;
+  }
+  .menu__items {
+    @apply flex flex-row items-center gap-6 cursor-pointer;
+  }
+  .menu__items img {
+    @apply w-20 rounded-full;
+  }
 }
-@layer utilities{
-  .btn{
-    @apply  border px-4 py-1 rounded-3xl text-sm;
->>>>>>> b515e7033c33a65ae46faf7c0561bf991c15b9dd
+@layer utilities {
+  .btn {
+    @apply border px-4 py-1 rounded-3xl text-sm;
   }
   .btn.bg--transparent {
     @apply bg-transparent border border-black px-3;
@@ -209,14 +189,17 @@
   .btn.bg--black {
     @apply bg-black text-white border border-black;
   }
-  .btn.bg--white{
+  .btn.bg--white {
     @apply border border-white bg-transparent text-white py-3;
   }
-  .btn.bg--banner{
-    @apply border bg-greenAccent py-2
+  .btn.bg--banner {
+    @apply border bg-greenAccent py-2;
   }
-  .btn.bg--price{
-    @apply border-transparent bg-greenPrimary py-2 px-4 text-white; 
+  .btn.bg--price {
+    @apply border-transparent bg-greenPrimary py-2 px-4 text-white;
+  }
+  .divider {
+    @apply block w-[100%] h-[1px] bg-black/10 my-4;
   }
   .menu__wrapper h2 {
     @apply text-2xl font-bold;
@@ -267,8 +250,7 @@
     @apply text-base leading-6 pt-4;
   }
 }
-@layer utilities {
-<<<<<<< HEAD
+/* @layer utilities {
   .btn {
     @apply border px-4 py-1 rounded-3xl text-sm;
   }
@@ -283,27 +265,8 @@
   }
   .btn.bg--banner {
     @apply border bg-greenAccent py-2;
-=======
-
-  .menuNav {
-    @apply border-b;
-  }
-  .menuNav__nav {
-    @apply flex flex-row py-4;
-  }
-  .menuNav__nav li {
-    @apply pr-8 text-sm;
->>>>>>> b515e7033c33a65ae46faf7c0561bf991c15b9dd
   }
   .divider {
     @apply block w-[100%] h-[1px] bg-black/10 my-4;
   }
-}
-<<<<<<< HEAD
-=======
-
-
-
-
-
->>>>>>> b515e7033c33a65ae46faf7c0561bf991c15b9dd
+} */

@@ -3,39 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SB19</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-</head>
-<body>
-  <!-- Header - roj -->
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header - jake -->
     <header class="header">
-        <div class="container">
-          <div class="header__wrapper">
-            <img src="../IMG/Rewards__IMG/Logo.svg" alt="" />
-            <div class="header__navigation bg-white p-[3rem]">
-              <nav class="flex flex-col gap-5">
-                <ul class="header__nav">
-                  <li><a href="">Menu</a></li>
-                  <li><a href="./rewards.html">Rewards</a></li>
-                  <li><a href="./menu.html">Gift Cards</a></li>
-                </ul>
-                <span class=""></span>
-                <div class="header__login pt-3">
-                  <div class="header__btn flex flex-row items-center gap-5">
-                    <a class="btn bg--transparent">Sign in</a>
-                    <a class="btn bg--black">Join now</a>
-                  </div>
-                </div>
-                <a><i class="fa-solid fa-location-dot"></i>  &nbsp; Find a store</a>
-              </nav>
+      <div class="container">
+        <div class="header__wrapper">
+          <img src="../IMG/Rewards__IMG/Logo.svg" alt="" />
+          <div class="header__navigation bg-white">
+            <nav>
+              <ul class="header__nav">
+                <li><a href="./menu.html">Menu</a></li>
+                <li class="header__active">
+                  <a href="./rewards.html">Rewards</a>
+                </li>
+                <li><a href="">Gift Cards</a></li>
+              </ul>
+            </nav>
+            <span class="divider"></span>
+            <div class="header__login">
+              <div class="header__btn">
+                <a class="btn bg--transparent">Sign in</a>
+                <a class="btn bg--black">Join now</a>
+              </div>
+              <div>
+                <a
+                  ><i class="fa-solid fa-location-dot"></i> &nbsp; Find a
+                  store</a
+                >
+              </div>
             </div>
-            <div class="toggle__menu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="back__drop"></div>
           </div>
           <div class="toggle__menu">
             <span></span>
@@ -138,38 +141,38 @@
       </div>
     </section>
 
-    <!-- favorites -->
+    <!-- favorites - jake -->
     <section class="favorites">
-        <div class="favorites__wrapper">
-          <div class="favorites__header">
-            <div class="favorites__title">
-              <h2>Get your favorites for free</h2>
-            </div>
-            <div class="favorites__tab">
-              <ul>
-                <li class="favorites__stars" id="favorites-tabs-1">
-                  25<i class="fa-solid fa-star"></i>
-                </li>
-                <li class="favorites__stars" id="favorites-tabs-2">
-                  100<i class="fa-solid fa-star"></i>
-                </li>
-                <li class="favorites__stars" id="favorites-tabs-3">
-                  200<i class="fa-solid fa-star"></i>
-                </li>
-                <li class="favorites__stars" id="favorites-tabs-4">
-                  300<i class="fa-solid fa-star"></i>
-                </li>
-                <li class="favorites__stars" id="favorites-tabs-5">
-                  400<i class="fa-solid fa-star"></i>
-                </li>
-              </ul>
-            </div>
+      <div class="favorites__wrapper">
+        <div class="favorites__header bg-greenLightest shadow-lg pt-16">
+          <div class="favorites__title">
+            <h2>Get your favorites for free</h2>
           </div>
-          <div class="favorites__content bg-green">
-            <div class="favorites__details" id="favorites-tabs-1-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/25.png" alt="" />
+          <div class="favorites__tab">
+            <h3 class="favorites__stars active" id="favorites-tabs-1">
+              25<i class="fa-solid fa-star"></i>
+            </h3>
+            <h3 class="favorites__stars" id="favorites-tabs-2">
+              100<i class="fa-solid fa-star"></i>
+            </h3>
+            <h3 class="favorites__stars" id="favorites-tabs-3">
+              200<i class="fa-solid fa-star"></i>
+            </h3>
+            <h3 class="favorites__stars" id="favorites-tabs-4">
+              300<i class="fa-solid fa-star"></i>
+            </h3>
+            <h3 class="favorites__stars" id="favorites-tabs-5">
+              400<i class="fa-solid fa-star"></i>
+            </h3>
+            <span class="favorites__glider"></span>
+          </div>
+        </div>
+        <div class="favorites__content bg-greenLight">
+          <div class="favorites__details active" id="favorites-tabs-1-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/25.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>Customize your drink</h3>
                   <p>
                     Make your drink just right with an extra espresso shot,
@@ -178,10 +181,12 @@
                 </div>
               </div>
             </div>
-            <div class="favorites__details" id="favorites-tabs-2-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/100.png" alt="" />
+          </div>
+          <div class="favorites__details" id="favorites-tabs-2-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/100.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>
                     Brewed hot or iced coffee or tea, bakery item, packaged
                     snack and more
@@ -193,10 +198,12 @@
                 </div>
               </div>
             </div>
-            <div class="favorites__details" id="favorites-tabs-3-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/200.png" alt="" />
+          </div>
+          <div class="favorites__details" id="favorites-tabs-3-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/200.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>
                     Handcrafted drink (Cold Brew, lattes and more) or hot
                     breakfast
@@ -208,10 +215,12 @@
                 </div>
               </div>
             </div>
-            <div class="favorites__details" id="favorites-tabs-4-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/300.png" alt="" />
+          </div>
+          <div class="favorites__details" id="favorites-tabs-4-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/300.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>Sandwich, protein box or at-home coffee</h3>
                   <p>
                     Enjoy a PM pick-me-up with a lunch sandwich, protein box or
@@ -220,10 +229,12 @@
                 </div>
               </div>
             </div>
-            <div class="favorites__details" id="favorites-tabs-5-content">
-              <div class="favorites__details--wrap">
-                <div class="favorites__products">
-                  <img src="../IMG/Rewards__IMG/400.png" alt="" />
+          </div>
+          <div class="favorites__details" id="favorites-tabs-5-content">
+            <div class="favorites__details--wrap">
+              <div class="favorites__products">
+                <img src="../IMG/Rewards__IMG/400.png" alt="" />
+                <div class="favorites__products--text">
                   <h3>Select Starbucks® merchandise</h3>
                   <p>
                     Take home a signature cup, drink tumbler or your choice of
@@ -378,6 +389,126 @@
             </div>
             <div class="prize__btn">
               <a href="" class="btn bg--price">Join Starbucks® Rewards</a>
+    <!-- dropdown -->
+    <section class="about border-#f2f0eb">
+      <span class="divider line__lg"></span>
+      <div class="container">
+        <div class="about__wrapper py-1 block lg:hidden">
+          <div class="about__content">
+            <div class="about__item">
+              <h4>About Us <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>Our Company</li>
+                <li>Our Coffee</li>
+                <li>Stories and News</li>
+                <li>Starbucks Archive</li>
+                <li>Investor Relations</li>
+                <li>Customer Service</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>Careers <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>Culture and Values</li>
+                <li>Inclusion, Diversity, and Equity</li>
+                <li>College Achievement Plan</li>
+                <li>Almuni Community</li>
+                <li>U.S Careers</li>
+                <li>International Careers</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>Social Impact <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>People</li>
+                <li>Planet</li>
+                <li>Environmental and Social Impacting Reporting</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>
+                For Business Partners <i class="fa-solid fa-chevron-down"></i>
+              </h4>
+              <ul>
+                <li>Landlord Support Center</li>
+                <li>Suppliers</li>
+                <li>Corporate Gift Card Sales</li>
+                <li>Office and Foodservice Coffee</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>
+                Order and Pick Up <i class="fa-solid fa-chevron-down"></i>
+              </h4>
+              <ul>
+                <li>Order on the App</li>
+                <li>Order on the Web</li>
+                <li>Delivery</li>
+                <li>Order and Pick Up Options</li>
+                <li>Explore and Find Coffee for Home</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- about-desktop-jake -->
+        <div class="about__wrapper--desktop py-1">
+          <div
+            class="about__content hidden lg:block lg:flex lg:flex-row lg:gap-8 pt-4"
+          >
+            <div class="about__item">
+              <h4>About Us <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>Our Company</li>
+                <li>Our Coffee</li>
+                <li>Stories and News</li>
+                <li>Starbucks Archive</li>
+                <li>Investor Relations</li>
+                <li>Customer Service</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>Careers <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>Culture and Values</li>
+                <li>Inclusion, Diversity, and Equity</li>
+                <li>College Achievement Plan</li>
+                <li>Almuni Community</li>
+                <li>U.S Careers</li>
+                <li>International Careers</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>Social Impact <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>People</li>
+                <li>Planet</li>
+                <li>Environmental and Social Impacting Reporting</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>
+                For Business Partners <i class="fa-solid fa-chevron-down"></i>
+              </h4>
+              <ul>
+                <li>Landlord Support Center</li>
+                <li>Suppliers</li>
+                <li>Corporate Gift Card Sales</li>
+                <li>Office and Foodservice Coffee</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>
+                Order and Pick Up <i class="fa-solid fa-chevron-down"></i>
+              </h4>
+              <ul>
+                <li>Order on the App</li>
+                <li>Order on the Web</li>
+                <li>Delivery</li>
+                <li>Order and Pick Up Options</li>
+                <li>Explore and Find Coffee for Home</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -447,6 +578,43 @@
           </div>
         </div>
     </section>
+    <span class="divider"></span>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__icons pt-8">
+            <ul class="flex gap-4">
+              <li class="bg-grey"><i class="fa-brands fa-spotify"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-facebook"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-pinterest"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-instagram"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-youtube"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-x-twitter"></i></li>
+            </ul>
+          </div>
+          <div class="footer__policy pt-8">
+            <ul class="flex flex-col gap-4">
+              <li class="hover__underline">Privacy Notice</li>
+              <li class="hover__underline">Consumer Health Privacy Notice</li>
+              <li class="hover__underline">Terms of Use</li>
+              <li class="hover__underline">
+                Do Not Share My Personal Information
+              </li>
+              <li class="hover__underline">CA Supply Chain Act</li>
+              <li class="hover__underline">Accessibility</li>
+              <li class="hover__underline">Cookie Preferences</li>
+            </ul>
+          </div>
+          <h4 class="pt-8">
+            ©2024 Starbucks Coffee Company.All rights reserved.
+          </h4>
+        </div>
+      </div>
+    </footer>
+
     <script src="./js/toggle.js"></script>
+    <script src="./js/rewardsTab.js"></script>
   </body>
 </html>
