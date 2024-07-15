@@ -94,7 +94,9 @@
     lg:flex-row lg:justify-center lg:pt-14 lg:pb-8 lg:gap-8;
   }
   .favorites__products img {
-    @apply /* desktop */ lg:w-96 lg:max-w-96;
+    @apply mt-4
+    /* desktop */ 
+    lg:w-96 lg:max-w-96;
   }
   .favorites__products--text {
     @apply /* desktop */ lg:text-left;
@@ -265,37 +267,14 @@
   .restriction__items {
     @apply flex flex-col gap-4;
   }
-  /* About */
-  .about {
-    @apply border-y-gray;
+  .menuNav {
+    @apply border-b;
   }
-  .about__item h4,
-  .about__item i {
-    @apply px-3 py-2 flex justify-between items-center cursor-pointer;
+  .menuNav__nav {
+    @apply flex flex-row py-4;
   }
-  .about__item i {
-    @apply mb-5 max-w-[35rem] mx-auto;
-  }
-  .about__item i {
-    @apply duration-500;
-  }
-  .about__content {
-    @apply text-justify mr-32;
-  }
-  .about__item i.open {
-    @apply rotate-180 duration-700;
-  }
-  .about__item ul {
-    @apply h-auto max-h-0 overflow-hidden duration-300;
-  }
-  .about__item ul.open {
-    @apply block max-h-[50rem] p-3 ease-in-out duration-300;
-  }
-  .about__wrapper {
-    @apply flex flex-row justify-center items-center;
-  }
-  .about__item {
-    @apply mb-5 max-w-[35rem] mx-auto;
+  .menuNav__nav li {
+    @apply pr-8 text-sm;
   }
 }
 
@@ -375,39 +354,6 @@
     @apply py-4
     /* desktop */
     lg:flex lg:flex-row lg:gap-16;
-  }
-  .menu__wrapper h2 {
-    @apply text-2xl font-bold;
-  }
-  .menu__items {
-    @apply flex flex-row items-center gap-6 cursor-pointer;
-  }
-  .menu__items img {
-    @apply w-20 rounded-full;
-  }
-  /* Footer */
-  .footer__icons li i {
-    @apply bg-black text-white p-2 rounded-full;
-  }
-}
-@layer utilities {
-  .btn {
-    @apply border px-4 py-1 rounded-3xl text-sm;
-  }
-  .btn.bg--transparent {
-    @apply bg-transparent border border-black px-3;
-  }
-  .btn.bg--black {
-    @apply bg-black text-white border border-black;
-  }
-  .btn.bg--white {
-    @apply border border-white bg-transparent text-white py-2 hover:bg-green-950 hover:duration-100 hover:ease-in;
-  }
-  .btn.bg--banner {
-    @apply border bg-greenPrimary hover:bg-greenAccent py-2;
-  }
-  .btn.bg--price {
-    @apply border-transparent bg-greenPrimary hover:bg-greenAccent py-2 px-4 text-white;
   }
   .menu__wrapper h2 {
     @apply text-2xl font-bold;
@@ -495,15 +441,7 @@
     /* desktop */
     lg:text-lg;
   }
-  .menuNav {
-    @apply border-b;
-  }
-  .menuNav__nav {
-    @apply flex flex-row py-4;
-  }
-  .menuNav__nav li {
-    @apply pr-8 text-sm;
-  }
+
   .about__content {
     @apply pt-4;
   }
@@ -533,7 +471,7 @@
     lg:overflow-visible lg:h-[25rem] lg:max-h-none lg:text-base lg:flex lg:flex-col lg:gap-8 lg:text-black/50;
   }
   .about__item ul li {
-    @apply mb-5 hover:text-black
+    @apply mb-4 hover:text-black 
     /* desktop */
     lg:hover:text-black lg:mb-0;
   }
@@ -542,6 +480,26 @@
   }
   .footer__icons li i {
     @apply bg-black text-white p-2 rounded-full;
+  }
+}
+@layer utilities {
+  .btn {
+    @apply border px-4 py-1 rounded-3xl text-sm;
+  }
+  .btn.bg--transparent {
+    @apply bg-transparent border border-black px-3;
+  }
+  .btn.bg--black {
+    @apply bg-black text-white border border-black;
+  }
+  .btn.bg--white {
+    @apply border border-white bg-transparent text-white py-2 hover:bg-green-950 hover:duration-100 hover:ease-in;
+  }
+  .btn.bg--banner {
+    @apply border bg-greenPrimary hover:bg-greenAccent py-2;
+  }
+  .btn.bg--price {
+    @apply border-transparent bg-greenPrimary hover:bg-greenAccent py-2 px-4 text-white;
   }
   .bg-grey {
     @apply p-[8px] hover:bg-black/20 hover:p-[8px] hover:rounded-full;
@@ -554,6 +512,9 @@
   }
   .hover__underline {
     @apply hover:underline;
+  }
+  .divider {
+    @apply block w-[100%] h-[1px] bg-black/10 my-4;
   }
   .divider.line__lg {
     @apply h-[2px];
