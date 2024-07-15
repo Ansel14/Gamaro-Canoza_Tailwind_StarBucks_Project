@@ -15,10 +15,13 @@ module.exports = {
         greenLightest: "#f1f8f5",
         gold: "#cba258",
         gray: "#f2f0eb",
+        black: "#161616",
       },
-      backgroundImage: {
+      backgroundImage:{
         banner: " url('../IMG/Rewards__IMG/hero-mobile_2021.jpg')",
-      },
+        prize: "url('../IMG/Rewards__IMG/844262945b2a8b8cfb29.png')",
+        banner2: "url('../IMG/Rewards__IMG/xl-hero-desktop_2021.png')",
+      },  
     },
   },
   plugins: [],
