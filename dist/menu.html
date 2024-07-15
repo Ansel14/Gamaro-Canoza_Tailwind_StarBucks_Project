@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
+    <title>Starbucks Menu</title>
     <link rel="stylesheet" href="./output.css" />
     <link rel="icon" href="../IMG/Rewards__IMG/Logo.svg" />
     <link
@@ -12,30 +12,35 @@
     />
   </head>
   <body>
-    <header class="header" id="header">
+    <header class="header border-b-2 border-b-black/20 drop-shadow-md z-[999]">
       <div class="container">
         <div class="header__wrapper">
           <img src="../IMG/Rewards__IMG/Logo.svg" alt="" />
-          <div class="header__navigation">
-            <nav class="flex flex-col gap-5">
+          <div class="header__navigation bg-white">
+            <nav>
               <ul class="header__nav">
-                <li><a href="">Menu</a></li>
-                <li><a href="./rewards.html">Rewards</a></li>
-                <li><a href="./menu.html">Gift Cards</a></li>
+                <li class="header__active"><a href="./menu.html">Menu</a></li>
+                <li>
+                  <a href="./rewards.html">Rewards</a>
+                </li>
+                <li><a href="">Gift Cards</a></li>
               </ul>
-              <span class="w-[20rem] h-[1.5px] bg-black/10"></span>
-              <div class="header__login pt-3">
-                <div class="header__btn flex flex-row items-center gap-5">
-                  <a class="btn bg--transparent">Sign in</a>
-                  <a class="btn bg--black">Join now</a>
-                </div>
-              </div>
-              <a
-                ><i class="fa-solid fa-location-dot"></i> &nbsp; Find a store</a
-              >
             </nav>
+            <span class="divider"></span>
+            <div class="header__login">
+              <div class="header__btn">
+                <a class="btn bg--transparent">Sign in</a>
+                <a class="btn bg--black">Join now</a>
+              </div>
+              <div>
+                <a
+                  ><i class="fa-solid fa-location-dot"></i> &nbsp; Find a
+                  store</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="toggle__menu">
+          <div class="toggle__menu bg-grey bg-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -67,11 +72,97 @@
     <section class="menu">
       <div class="container">
         <div class="menu__wrapper">
+          <div class="menu__desktop" id="menu__desktop">
+            <h3>Drinks</h3>
+            <div class="menu__drinks flex flex-col gap-4">
+              <div class="menu__items" id="menu__tabs-1">
+                <h4>Iced Energy</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-2">
+                <h4>Hot Coffees</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-3">
+                <h4>Cold Coffees</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-4">
+                <h4>
+                  Starbucks <br />
+                  Refreshers <br />
+                  Beverages
+                </h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-5">
+                <h4>
+                  Frappuccino® <br />
+                  Blended Beverages
+                </h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-6">
+                <h4>
+                  Iced Tea and <br />
+                  Lemonade
+                </h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-7">
+                <h4>Hot Teas</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-8">
+                <h4>Milk,Juice & More</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-9">
+                <h4>Bottled Beverages</h4>
+              </div>
+            </div>
+            <h3>Food</h3>
+            <div class="menu__food flex flex-col gap-4">
+              <div class="menu__items" id="menu__tabs-10">
+                <h4>Hot Breakfast</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-11">
+                <h4>Oatmeal & Yogurt</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-12">
+                <h4>Bakery</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-13">
+                <h4>Lunch</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-14">
+                <h4>Snacks & Sweets</h4>
+              </div>
+            </div>
+            <h3>At Home Coffee</h3>
+            <div class="menu__atHome flex flex-col gap-4">
+              <div class="menu__items" id="menu__tabs-15">
+                <h4>Whole Bean</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-16">
+                <h4>VIA® Instant</h4>
+              </div>
+            </div>
+            <h3>Merchandise</h3>
+            <div class="menu__merch flex flex-col gap-4">
+              <div class="menu__items" id="menu__tabs-17">
+                <h4>Cold Cups</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-18">
+                <h4>Tumblers</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-19">
+                <h4>Mugs</h4>
+              </div>
+              <div class="menu__items" id="menu__tabs-20">
+                <h4>Other</h4>
+              </div>
+            </div>
+          </div>
           <div class="menu__tab active" id="menu__all">
             <h2>Menu</h2>
             <h3>Drinks</h3>
             <span class="divider"></span>
-            <div class="menu__drinks flex flex-col gap-4">
+            <div
+              class="menu__drinks flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-8"
+            >
               <div class="menu__items" id="menu__tabs-1">
                 <img
                   src="../IMG/Menu_ IMG/DRINKS/Iced_Energy/TropicalCitrusEnergyDrink.jpg"
@@ -138,7 +229,9 @@
             </div>
             <h3>Food</h3>
             <span class="divider"></span>
-            <div class="menu__food flex flex-col gap-4">
+            <div
+              class="menu__food flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-8"
+            >
               <div class="menu__items" id="menu__tabs-10">
                 <img
                   src="../IMG/Menu_ IMG/FOOD/Hot_Breakfast/EggPestoMozzarellaSandwich.jpg"
@@ -177,7 +270,9 @@
             </div>
             <h3>At Home Coffee</h3>
             <span class="divider"></span>
-            <div class="menu__atHome flex flex-col gap-4">
+            <div
+              class="menu__atHome flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-8"
+            >
               <div class="menu__items" id="menu__tabs-15">
                 <img
                   src="../IMG/Menu_ IMG/AT_HOME_COFFEE/Whole_Bean/ReserveColombiaNarinoGranosDeEsperanzaUSWBReserve.jpg"
@@ -195,7 +290,9 @@
             </div>
             <h3>Merchandise</h3>
             <span class="divider"></span>
-            <div class="menu__merch flex flex-col gap-4">
+            <div
+              class="menu__merch flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-8"
+            >
               <div class="menu__items" id="menu__tabs-17">
                 <img
                   src="../IMG/Menu_ IMG/MERCHANDISE/Cold_Cups/11148665PLSTCCLDCUP16OZ.jpg"
@@ -2560,6 +2657,168 @@
         </div>
       </div>
     </section>
+
+    <!-- dropdown -->
+    <section class="about border-#f2f0eb">
+      <span class="divider line__lg"></span>
+      <div class="container">
+        <div class="about__wrapper py-1 block lg:hidden">
+          <div class="about__content">
+            <div class="about__item">
+              <h4>About Us <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>Our Company</li>
+                <li>Our Coffee</li>
+                <li>Stories and News</li>
+                <li>Starbucks Archive</li>
+                <li>Investor Relations</li>
+                <li>Customer Service</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>Careers <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>Culture and Values</li>
+                <li>Inclusion, Diversity, and Equity</li>
+                <li>College Achievement Plan</li>
+                <li>Almuni Community</li>
+                <li>U.S Careers</li>
+                <li>International Careers</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>Social Impact <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>People</li>
+                <li>Planet</li>
+                <li>Environmental and Social Impacting Reporting</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>
+                For Business Partners <i class="fa-solid fa-chevron-down"></i>
+              </h4>
+              <ul>
+                <li>Landlord Support Center</li>
+                <li>Suppliers</li>
+                <li>Corporate Gift Card Sales</li>
+                <li>Office and Foodservice Coffee</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>
+                Order and Pick Up <i class="fa-solid fa-chevron-down"></i>
+              </h4>
+              <ul>
+                <li>Order on the App</li>
+                <li>Order on the Web</li>
+                <li>Delivery</li>
+                <li>Order and Pick Up Options</li>
+                <li>Explore and Find Coffee for Home</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- about-desktop -->
+        <div class="about__wrapper--desktop py-1">
+          <div
+            class="about__content hidden lg:block lg:flex lg:flex-row lg:gap-8 pt-4"
+          >
+            <div class="about__item">
+              <h4>About Us <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>Our Company</li>
+                <li>Our Coffee</li>
+                <li>Stories and News</li>
+                <li>Starbucks Archive</li>
+                <li>Investor Relations</li>
+                <li>Customer Service</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>Careers <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>Culture and Values</li>
+                <li>Inclusion, Diversity, and Equity</li>
+                <li>College Achievement Plan</li>
+                <li>Almuni Community</li>
+                <li>U.S Careers</li>
+                <li>International Careers</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>Social Impact <i class="fa-solid fa-chevron-down"></i></h4>
+              <ul>
+                <li>People</li>
+                <li>Planet</li>
+                <li>Environmental and Social Impacting Reporting</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>
+                For Business Partners <i class="fa-solid fa-chevron-down"></i>
+              </h4>
+              <ul>
+                <li>Landlord Support Center</li>
+                <li>Suppliers</li>
+                <li>Corporate Gift Card Sales</li>
+                <li>Office and Foodservice Coffee</li>
+              </ul>
+            </div>
+            <div class="about__item">
+              <h4>
+                Order and Pick Up <i class="fa-solid fa-chevron-down"></i>
+              </h4>
+              <ul>
+                <li>Order on the App</li>
+                <li>Order on the Web</li>
+                <li>Delivery</li>
+                <li>Order and Pick Up Options</li>
+                <li>Explore and Find Coffee for Home</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <span class="divider"></span>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__icons pt-8">
+            <ul class="flex gap-4">
+              <li class="bg-grey"><i class="fa-brands fa-spotify"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-facebook"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-pinterest"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-instagram"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-youtube"></i></li>
+              <li class="bg-grey"><i class="fa-brands fa-x-twitter"></i></li>
+            </ul>
+          </div>
+          <div class="footer__policy pt-8">
+            <ul class="flex flex-col gap-4">
+              <li class="hover__underline">Privacy Notice</li>
+              <li class="hover__underline">Consumer Health Privacy Notice</li>
+              <li class="hover__underline">Terms of Use</li>
+              <li class="hover__underline">
+                Do Not Share My Personal Information
+              </li>
+              <li class="hover__underline">CA Supply Chain Act</li>
+              <li class="hover__underline">Accessibility</li>
+              <li class="hover__underline">Cookie Preferences</li>
+            </ul>
+          </div>
+          <h4 class="pt-8">
+            ©2024 Starbucks Coffee Company.All rights reserved.
+          </h4>
+        </div>
+      </div>
+    </footer>
 
     <script src="./js/toggle.js"></script>
     <script src="./js/menuTab.js"></script>

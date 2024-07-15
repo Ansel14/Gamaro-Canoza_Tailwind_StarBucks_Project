@@ -9,7 +9,7 @@ tabs.forEach((tab) => {
     removeActiveTab();
     tab.classList.add("active");
     const activeItems = document.querySelector(`#${tab.id}-content`);
-    activeItems.scroll(0, 0);
+    scroll(0, 0);
     removeActiveItems();
     activeItems.classList.add("active");
   });
