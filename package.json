@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^3.4.5"
   },
   "name": "starbucks-v2",
   "version": "1.0.0",
